@@ -1,0 +1,19 @@
+{
+  "name": "api-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node src/index"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prisma": "^4.13.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.13.0",
+    "cors": "^2.8.5"
+  }
+}

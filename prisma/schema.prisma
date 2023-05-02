@@ -1,0 +1,18 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider     = "mysql"
+  url          = "mysql://41op40z8h6m3c2h81qr9:pscale_pw_HxNG9oePrYJChTkHT2LJZvlX9joz1r7GU8dqhU87Tcj@aws.connect.psdb.cloud/game?sslaccept=strict"
+  relationMode = "prisma"
+}
+
+model Info {
+  id    Int @id @default(autoincrement())
+  money Int @default(0)
+  func  Int @default(0)
+}
