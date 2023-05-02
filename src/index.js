@@ -1,9 +1,11 @@
 import express from "express";
 import { prisma } from "./prisma/prisma.js";
 import cors from 'cors'
+import dotenv from 'dotenv'
 
 const app = express();
 
+dotenv.config()
 function find() {
   return prisma.info.findMany();
 }
