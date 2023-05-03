@@ -14,6 +14,6 @@ app.use(cors())
 app.get("/", async (request, response) => {
      const user = await find();
      console.log(user)
-     response.json("Oi");
+     response.json(user);
 });
 app.listen(3000, console.log("App running!"));
